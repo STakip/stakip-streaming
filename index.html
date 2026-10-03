@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STAKIP | Unlimited Streaming</title>
+    <meta
+      name="description"
+      content="STAKIP is a premium streaming platform with movies, series, documentaries, and exclusive originals."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="landing-screen" id="landingScreen">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+
+        <header class="landing-header">
+          <div class="brand-wrap">
+            <span class="brand-mark">S</span>
+            <span class="brand-name">STAKIP</span>
+          </div>
+          <button class="ghost-button">Sign In</button>
+        </header>
+
+        <div class="landing-content">
+          <div class="eyebrow">NEW ORIGINAL</div>
+          <h1>Stream stories that stay with you.</h1>
+          <p>
+            Discover premium movies, thrillers, documentaries, award-winning series,
+            and exclusive originals crafted for your night in.
+          </p>
+          <button class="cta-button" id="startButton">Start</button>
+        </div>
+      </section>
+
+      <main class="stream-home hidden" id="streamHome">
+        <header class="topbar">
+          <div class="nav-left">
+            <div class="brand-wrap">
+              <span class="brand-mark">S</span>
+              <span class="brand-name">STAKIP</span>
+            </div>
+            <nav class="main-nav">
+              <a href="#">Home</a>
+              <a href="#">Series</a>
+              <a href="#">Movies</a>
+              <a href="#">Docs</a>
+              <a href="#">My List</a>
+            </nav>
+          </div>
+
+          <div class="nav-right">
+            <div class="search-box">
+              <span class="search-icon">⌕</span>
+              <input id="searchInput" type="text" placeholder="Search movies, series, docs..." />
+            </div>
+            <button class="profile-pill">ST</button>
+          </div>
+        </header>
+
+        <section class="featured-hero">
+          <div class="hero-backdrop"></div>
+          <div class="hero-overlay"></div>
+
+          <div class="hero-content">
+            <div class="hero-kicker">STAKIP ORIGINAL</div>
+            <h2>MR. ROBOT</h2>
+            <div class="meta-row">
+              <span>2024</span>
+              <span>TV Series</span>
+              <span>Thriller</span>
+              <span>9.3</span>
+            </div>
+            <p>
+              A paranoid hacker wades through a dangerous digital rebellion while the world
+              around him collapses into chaos.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-action">▶ Play</button>
+              <button class="secondary-action">＋ My List</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h3>Trending Now</h3>
+            <span>See all</span>
+          </div>
+          <div class="media-row" id="trendingRow"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h3>Movies</h3>
+            <span>See all</span>
+          </div>
+          <div class="media-row" id="moviesRow"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h3>Series</h3>
+            <span>See all</span>
+          </div>
+          <div class="media-row" id="seriesRow"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <h3>Documentaries</h3>
+            <span>See all</span>
+          </div>
+          <div class="media-row" id="docsRow"></div>
+        </section>
+
+        <section class="content-section episodes-section">
+          <div class="section-header">
+            <h3>Mr. Robot</h3>
+            <span>All seasons</span>
+          </div>
+          <div class="episodes-grid" id="mrRobotRow"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

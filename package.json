@@ -1,0 +1,318 @@
+const contentData = {
+  trending: [
+    {
+      title: "The Silent Signal",
+      type: "Movie",
+      year: "2025",
+      badge: "Top 10",
+      image:
+        "https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Crimson Echo",
+      type: "Series",
+      year: "2024",
+      badge: "New",
+      image:
+        "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Glass Horizon",
+      type: "Movie",
+      year: "2023",
+      badge: "HD",
+      image:
+        "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Night Shift",
+      type: "Series",
+      year: "2025",
+      badge: "Popular",
+      image:
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Neon District",
+      type: "Doc",
+      year: "2024",
+      badge: "4K",
+      image:
+        "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Under Pressure",
+      type: "Movie",
+      year: "2022",
+      badge: "Action",
+      image:
+        "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  movies: [
+    {
+      title: "Blackout",
+      type: "Movie",
+      year: "2024",
+      badge: "8.9",
+      image:
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Last Signal",
+      type: "Movie",
+      year: "2025",
+      badge: "New",
+      image:
+        "https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Mirror Run",
+      type: "Movie",
+      year: "2021",
+      badge: "7.8",
+      image:
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Velvet Code",
+      type: "Movie",
+      year: "2024",
+      badge: "PG-13",
+      image:
+        "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Red Current",
+      type: "Movie",
+      year: "2020",
+      badge: "4K",
+      image:
+        "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Static Bloom",
+      type: "Movie",
+      year: "2023",
+      badge: "Top 10",
+      image:
+        "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  series: [
+    {
+      title: "The Veil",
+      type: "Series",
+      year: "2025",
+      badge: "6 eps",
+      image:
+        "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Hollow Ridge",
+      type: "Series",
+      year: "2024",
+      badge: "New",
+      image:
+        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Echoes of Time",
+      type: "Series",
+      year: "2022",
+      badge: "8 eps",
+      image:
+        "https://images.unsplash.com/photo-1499363536502-87642509e31b?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Nocturne",
+      type: "Series",
+      year: "2025",
+      badge: "HD",
+      image:
+        "https://images.unsplash.com/photo-1499363536502-87642509e31b?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Raven Road",
+      type: "Series",
+      year: "2021",
+      badge: "10 eps",
+      image:
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Afterglow",
+      type: "Series",
+      year: "2023",
+      badge: "Top 10",
+      image:
+        "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  docs: [
+    {
+      title: "Digital Empire",
+      type: "Doc",
+      year: "2024",
+      badge: "Documentary",
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Waves of Change",
+      type: "Doc",
+      year: "2023",
+      badge: "Nature",
+      image:
+        "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "The Last Frontier",
+      type: "Doc",
+      year: "2022",
+      badge: "Exploration",
+      image:
+        "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "By the River",
+      type: "Doc",
+      year: "2024",
+      badge: "Culture",
+      image:
+        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Cold Truth",
+      type: "Doc",
+      year: "2021",
+      badge: "Investigation",
+      image:
+        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      title: "Open Circuit",
+      type: "Doc",
+      year: "2025",
+      badge: "Tech",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  mrRobot: [
+    {
+      number: "Season 1",
+      title: "Hello, Elliot",
+      meta: "10 Episodes • 2015",
+      image:
+        "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      number: "Season 2",
+      title: "E Corp vs Elliot",
+      meta: "12 Episodes • 2016",
+      image:
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      number: "Season 3",
+      title: "The Dark Army",
+      meta: "10 Episodes • 2017",
+      image:
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      number: "Season 4",
+      title: "Zero Day",
+      meta: "13 Episodes • 2019",
+      image:
+        "https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=900&q=80"
+    }
+  ]
+};
+
+const elements = {
+  startButton: document.getElementById("startButton"),
+  landingScreen: document.getElementById("landingScreen"),
+  streamHome: document.getElementById("streamHome"),
+  searchInput: document.getElementById("searchInput"),
+  trendingRow: document.getElementById("trendingRow"),
+  moviesRow: document.getElementById("moviesRow"),
+  seriesRow: document.getElementById("seriesRow"),
+  docsRow: document.getElementById("docsRow"),
+  mrRobotRow: document.getElementById("mrRobotRow")
+};
+
+function renderCards(containerId, cards) {
+  const container = document.getElementById(containerId);
+  const html = cards
+    .map(
+      (item) => `
+        <article class="media-card" data-title="${item.title.toLowerCase()}">
+          <div class="media-thumb" style="background-image:url('${item.image}')"></div>
+          <div class="media-fade"></div>
+          <div class="media-details">
+            <div class="media-title">${item.title}</div>
+            <div class="media-meta">
+              <span>${item.type}</span>
+              <span>${item.year}</span>
+            </div>
+          </div>
+          <div class="media-badge">${item.badge}</div>
+        </article>
+      `
+    )
+    .join("");
+
+  container.innerHTML = html;
+}
+
+function renderEpisodes() {
+  const html = contentData.mrRobot
+    .map(
+      (item) => `
+        <article class="episode-card" data-title="${item.title.toLowerCase()}">
+          <div class="episode-thumb" style="background-image:url('${item.image}')"></div>
+          <div class="episode-body">
+            <span class="episode-number">${item.number}</span>
+            <div class="episode-title">${item.title}</div>
+            <div class="episode-meta">${item.meta}</div>
+          </div>
+        </article>
+      `
+    )
+    .join("");
+
+  elements.mrRobotRow.innerHTML = html;
+}
+
+function applySearch(filterText) {
+  const term = filterText.trim().toLowerCase();
+
+  document.querySelectorAll(".media-card, .episode-card").forEach((card) => {
+    const title = (card.dataset.title || "").toLowerCase();
+    const shouldShow = !term || title.includes(term);
+    card.classList.toggle("hidden-item", !shouldShow);
+  });
+}
+
+function launchHome() {
+  elements.landingScreen.classList.add("hidden");
+  elements.streamHome.classList.remove("hidden");
+}
+
+function init() {
+  renderCards("trendingRow", contentData.trending);
+  renderCards("moviesRow", contentData.movies);
+  renderCards("seriesRow", contentData.series);
+  renderCards("docsRow", contentData.docs);
+  renderEpisodes();
+
+  elements.startButton.addEventListener("click", launchHome);
+  elements.searchInput.addEventListener("input", (event) => {
+    applySearch(event.target.value);
+  });
+}
+
+init();
+
